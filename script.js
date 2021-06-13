@@ -10,13 +10,18 @@ timeLine.from('.circle',{x:"-100%", ease:"bounce"})
 
 let click = document.querySelector('.circleObject')
 let sorry = document.querySelector('.sorryOff')
+
+
 click.addEventListener('click',function(){
 sorry.removeAttribute('class')
 sorry.className = "sorryOn"
 timeLine.fromTo('img',{
   opacity:0,scale:0,rotation: 720, x:"50%"},{
  opacity:1,scale:.85, rotation: 0}, '<1')
-})
+timeLine.to('.options',{x:'0', duration:1, delay:3})
+}
+
+)
 
 
 
