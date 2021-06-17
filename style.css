@@ -147,6 +147,7 @@ span {
   justify-content: center;
   flex-direction: column;
   font-size: 2rem;
+  /* replace transform -100% once click is all good */
   transform: translateX(-100%);
 }
 .options ul {
@@ -154,7 +155,7 @@ span {
   flex-direction: column;
 }
 
-li {
+.optionsChoice {
   width: 50%;
   flex-direction: column;
   display: inline;
@@ -167,10 +168,42 @@ li {
   margin-bottom: 2rem;
   background-color: peru;
   color: rgb(120, 9, 9);
+  z-index: 2;
 }
-li:hover {
+.optionsChoice:hover {
   background-color: rgb(120, 9, 9);
   color: peru;
   cursor: pointer;
   border: groove 1rem rgb(247, 165, 165);
+}
+.confirm {
+  opacity: 0;
+  left: 0;
+}
+.confirmIcons {
+  position: relative;
+  font-size: 5rem;
+  transform: translateY(-250%);
+}
+.fa-check-square {
+  color: rgb(118, 220, 118);
+  cursor: pointer;
+  justify-content: center;
+  margin-right: 2rem;
+}
+.fa-check-square:hover {
+  color: rgb(47, 205, 47);
+  cursor: pointer;
+}
+.fa-window-close {
+  color: rgb(238, 105, 105);
+  cursor: pointer;
+}
+.fa-window-close:hover {
+  color: rgb(210, 63, 63);
+  cursor: pointer;
+}
+
+.kidding {
+  padding-top: 4rem;
 }
