@@ -118,6 +118,7 @@ let yes = document.querySelector('.fa-check-square')
 
 no.addEventListener("click", function(){
 timeLine.to('.confirm',{opacity:0})
+timeLine.to('input',{y:"500%"})
 
  timeLine.to('.heavy',{
   x: "50%",duration:.2, y:"50"})
@@ -134,8 +135,20 @@ timeLine.to('.mod',{
   x: "50%",duration:.2
 })
 
+
 timeLine.to('.kidding',{y:"50", opacity:1}, '-=1')
 
 timeLine.to('.confirm',{opacity:0})
 
+})
+
+yes.addEventListener("click", function(){
+
+
+ timeLine.to('.options',{opacity:0,duration:.2})
+ timeLine.to('.finalRemove',{opacity:0,duration:.1},'-=1')
+ timeLine.to('.finalWindow',{opacity:1})
+timeLine.to('.finalWindowVert1',{x:'-25%',y:'100%',opacity:.2})
+timeLine.to('.finalWindowVert2',{x:'25%',y:'-100%',opacity:.2})
+   
 })

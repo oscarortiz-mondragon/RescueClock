@@ -18,7 +18,10 @@ section {
   justify-content: center;
   text-align: center;
 }
-
+.finalRemove {
+  background-color: rgb(233, 186, 233);
+  height: 150vh;
+}
 h1 {
   font-size: 2rem;
   color: rgb(49, 91, 230);
@@ -206,4 +209,55 @@ span {
 
 .kidding {
   padding-top: 4rem;
+}
+input {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateX(-300%);
+}
+.finalWindow {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(132, 223, 230);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: -4;
+  opacity: 0;
+}
+.finalWindowText {
+  font-size: 5rem;
+  opacity: 1;
+  z-index: -5;
+}
+.finalWindowVert1 {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  border: solid red 30rem;
+  height: 0;
+  width: 0;
+  rotate: 50deg;
+  opacity: 1;
+}
+.finalWindowVert2 {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: solid blue 30rem;
+  rotate: 50deg;
+  opacity: 1;
 }
